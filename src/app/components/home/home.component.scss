@@ -1,0 +1,18 @@
+@use 'colors' as *;
+
+main  {
+    padding: 48px 10vw 0px 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    span {
+        color: $primary;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+}

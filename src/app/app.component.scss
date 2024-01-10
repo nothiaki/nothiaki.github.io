@@ -1,5 +1,10 @@
-main {
-    width: 100vw;
+@use 'colors' as *;
+
+.container {
     min-height: 100vh;
-    background-color: red;
+    background-color: $background;
+
+    span {
+        color: $primary;
+    }
 }
