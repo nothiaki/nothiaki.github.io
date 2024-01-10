@@ -1,0 +1,9 @@
+@use 'colors' as *;
+
+header  {
+    padding: 8px;
+
+    span {
+        color: $primary;
+    }
+}
