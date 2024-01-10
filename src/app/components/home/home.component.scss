@@ -10,6 +10,22 @@ main  {
         color: $primary;
     }
 
+    .title-container .icons-container {
+        display: flex;
+        gap: 18px;
+        padding: 16px 0px;
+
+        .fa-github, .fa-linkedin, .fa-file {
+            cursor: pointer;
+            transition: all 0.2ms;
+
+            &:hover {
+                color: $primary;
+                scale: 1.1;
+            }
+        }
+    }
+
     .about-container {
         display: flex;
         flex-direction: column;
