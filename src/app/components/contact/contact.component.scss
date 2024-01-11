@@ -1,0 +1,11 @@
+@use 'colors' as *;
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p a {
+        color: $primary;
+    }
+}

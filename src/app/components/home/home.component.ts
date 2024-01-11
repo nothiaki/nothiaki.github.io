@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsComponent } from "../projects/projects.component";
+import { ContactComponent } from "../contact/contact.component";
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
-    imports: [ProjectsComponent]
+    imports: [ProjectsComponent, ContactComponent]
 })
 export class HomeComponent implements OnInit {
   face: string = '';
