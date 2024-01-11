@@ -1,0 +1,16 @@
+<main>
+    <div class="title-container">
+        <h1>Projects</h1>
+    </div>
+    <div class="projects-container">
+        @for(i of repositories$ | async; track $index) {
+            <p>{{ i.name }} - 
+                <a href="{{ i.html_url }}" target="_blank" rel="noopener noreferrer">source</a>
+                 
+                @if(i.homepage) {
+                    / <a href="{{ i.homepage }}" target="_blank" rel="noopener noreferrer">site</a>
+                }
+            </p>
+        }
+    </div>
+</main>
