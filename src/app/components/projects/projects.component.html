@@ -3,6 +3,7 @@
         <h1>Projects</h1>
     </div>
     <div class="repository-container">
+        <p>My github repositories below</p>
         @for(i of repositories$ | async; track $index) {
             <p>{{ i.name }} - 
                 <a href="{{ i.html_url }}" target="_blank" rel="noopener noreferrer">source</a>

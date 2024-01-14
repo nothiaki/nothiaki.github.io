@@ -5,18 +5,24 @@
         color: $primary;
     }
 
-    .title-container .icons-container {
-        display: flex;
-        gap: 18px;
-        padding: 16px 0px;
+    .title-container {
+        h1 {
+            line-height: 2.4rem;
+        }
 
-        .fa-github, .fa-linkedin, .fa-file {
-            cursor: pointer;
-            transition: all 0.2ms;
-
-            &:hover {
-                color: $primary;
-                scale: 1.1;
+        .icons-container {
+            display: flex;
+            gap: 18px;
+            padding: 16px 0px;    
+            
+            .fa-github, .fa-linkedin, .fa-file {
+                cursor: pointer;
+                transition: all 0.2ms;
+                
+                &:hover {
+                    color: $primary;
+                    scale: 1.1;
+                }
             }
         }
     }
@@ -24,6 +30,7 @@
     .about-container {
         display: flex;
         flex-direction: column;
+        padding: 36px 0px;
         gap: 18px;
     }
 }
