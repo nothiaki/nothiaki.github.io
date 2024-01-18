@@ -16,6 +16,16 @@ html {
     scrollbar-color: $scrollbar $background;
 }
 
+::-moz-selection {
+    color: $font;
+    background: $primary;
+  }
+  
+::selection {
+    color: $font;
+    background: $primary;
+}
+
 * {
     margin: 0;
     padding: 0;
