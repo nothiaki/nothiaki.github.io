@@ -1,4 +1,4 @@
-export interface repository {
+export interface GithubRepository {
     name: '',
     html_url: '',
     homepage?: ''

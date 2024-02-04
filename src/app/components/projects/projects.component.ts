@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RepositoriesService } from '../../services/repositories.service';
+import { ApiService } from '../../services/api.service';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
@@ -10,6 +10,6 @@ import { AsyncPipe } from '@angular/common';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  private repositoriesServive = inject(RepositoriesService);
-  protected repositories$ = this.repositoriesServive.getRepositories();
+  private apiService = inject(ApiService);
+  protected repositories$ = this.apiService.getGithubRepositories();
 }
