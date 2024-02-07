@@ -1,0 +1,13 @@
+@use 'colors' as *;
+
+.container {
+    min-height: 100vh;
+    background-color: $background;
+
+    main  {
+        padding: 8vw 16vw 8vw 16vw;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+}
