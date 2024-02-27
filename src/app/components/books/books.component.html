@@ -5,7 +5,7 @@
     <div class="books-container">
         <p>Books I read this year</p>
         @for(i of books; track $index) {
-          <p><a href="{{ i.reference }}">{{ i.title }}</a> by {{ i.author }}</p>
+          <p><a href="{{ i.reference }}" target="_blank" rel="noopener noreferrer">{{ i.title }}</a> by {{ i.author }}</p>
         }
     </div>
 </div>
