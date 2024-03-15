@@ -19,8 +19,8 @@ html {
 ::-moz-selection {
     color: $font;
     background: $primary;
-  }
-  
+}
+
 ::selection {
     color: $font;
     background: $primary;
@@ -32,6 +32,10 @@ html {
     font-family: 'Inter', 'sans-serif';
     color: $font;
     line-height: 1.8rem;
+}
+
+p {
+  font-size: 17px;
 }
 
 a {
