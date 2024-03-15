@@ -5,13 +5,10 @@
     <div class="repository-container">
         <p>My github repositories below</p>
         @for(i of repositories$ | async; track $index) {
-            <p>{{ i.name }} : 
-                [ <a href="{{ i.html_url }}" target="_blank" rel="noopener noreferrer">source</a>
+            <p>{{ i.name }}
+                <a href="{{ i.html_url }}" target="_blank" rel="noopener noreferrer">source</a>
                 @if(i.homepage) {,
-                    <a href="{{ i.homepage }}" target="_blank" rel="noopener noreferrer">site</a> ]
-                }
-                @else {
-                    ]
+                    <a href="{{ i.homepage }}" target="_blank" rel="noopener noreferrer">site</a>
                 }
             </p>
         }
