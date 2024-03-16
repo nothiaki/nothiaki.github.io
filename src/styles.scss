@@ -18,18 +18,18 @@ html {
 
 ::-moz-selection {
     color: $font;
-    background: $primary;
+    background: $large-primary;
 }
 
 ::selection {
     color: $font;
-    background: $primary;
+    background: $large-primary;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', 'sans-serif';
+    font-family: 'Inter', sans-serif;
     color: $font;
     line-height: 1.8rem;
 }

@@ -1,11 +1,11 @@
 @use 'colors' as *;
 
 .home-container {
-    span {
-        color: $primary;
-    }
-
     .title-container {
+        span {
+          color: $large-primary;
+        }
+
         h1 {
             line-height: 2.4rem;
         }
@@ -13,12 +13,12 @@
         .icons-container {
             display: flex;
             gap: 18px;
-            padding: 16px 0px;    
-            
+            padding: 16px 0px;
+
             .fa-github, .fa-linkedin, .fa-file {
                 cursor: pointer;
                 transition: all 0.2ms;
-                
+
                 &:hover {
                     color: $primary;
                     scale: 1.1;
@@ -32,5 +32,9 @@
         flex-direction: column;
         padding: 36px 0px;
         gap: 18px;
+
+        span {
+          color: $primary;
+        }
     }
 }
