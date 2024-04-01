@@ -1,5 +1,5 @@
 export interface GithubRepository {
-    name: '',
-    html_url: '',
-    homepage?: ''
+  name: string,
+  html_url: string,
+  homepage?: string
 }
