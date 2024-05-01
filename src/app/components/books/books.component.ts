@@ -19,6 +19,11 @@ export class BooksComponent {
       title: "O Fazedor de Velhos",
       author: "Rodrigo Lacerda",
       reference: "https://www.amazon.com.br/fazedor-velhos-Rodrigo-Lacerda/dp/8535928421/ref=sr_1_1?crid=2IUHIAUR4PV89&dib=eyJ2IjoiMSJ9.10xM8_F8NoPUZJELRs0wVBgLG5hzHltOXZnNPuMWBx6mczmn3PAAV1XapAV1tauHrpOnQYlTg3LwC1hpcWjS6XN99iilEKKhcTU1pX_Uh2RKHxjp6aVRhMYgvj9BVz4K_LY0FxIweeZ7-vKryPsgWWfq4Bv14oX2m86mYg84fIJKVfChrG3joi_VLkf2TWys2iUztW9CYtKTWLOHvT4ndmnmCS--3_Y54LDXrdf9_jWpvj6O3hrGUD9JcC8bO9mAFrhqCZRYwDc_gQF2hrVEaRh0Os1iAVDt7PdJidgi5pk.A6Uu2vazBDTePtwsHpp-7OOvGTjmUugHfg1mDmRjYjQ&dib_tag=se&keywords=o+fazedor+de+velhos&qid=1709074549&sprefix=o+faze%2Caps%2C472&sr=8-1"
+    },
+    {
+      title: "A Revolução dos Bichos",
+      author: "George Orwell",
+      reference: "https://www.amazon.com.br/revolu%C3%A7%C3%A3o-dos-bichos-conto-fadas/dp/8535909559"
     }
   ];
 }

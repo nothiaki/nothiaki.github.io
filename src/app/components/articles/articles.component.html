@@ -3,7 +3,7 @@
         <h1>Articles</h1>
     </div>
     <div class="repository-container">
-        <p>Artivles I write in dev.to</p>
+        <p>Articles I wrote in dev.to</p>
         @for(i of articles$ | async; track $index) {
           <a href="{{ i.url }}" target="_blank" rel="noopener noreferrer">{{ i.title }}</a>
         }
