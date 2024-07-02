@@ -9,7 +9,7 @@ export function Articles() {
   const [articles, setArticles] = useState<Article[]>([])
 
   useEffect(() => {
-    fetch('https://dev.to/api/articles?username=hiaki')
+    fetch("https://dev.to/api/articles?username=hiaki")
       .then((r) => r.json())
       .then((data: Article[]) => {
         setArticles(data)
@@ -23,11 +23,10 @@ export function Articles() {
         {
           articles.map((article: Article) => (
             <p>
-              <a className="underline" href={article.url}>{article.title}</a>
+              <a className="underline" href={article.url} target="_blank">{article.title}</a>
             </p>
           ))
         }
-
       </div>
     </>
   )

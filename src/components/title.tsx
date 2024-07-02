@@ -48,7 +48,7 @@ export function Title() {
 
   return (
     <>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-end">
         <h1 className="text-2xl font-bold">
           Hey<span className="text-primary">,</span> I<span className="text-primary">'</span>
           m Celso Henrique <span className="text-primary">{ char }</span>
