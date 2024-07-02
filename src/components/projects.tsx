@@ -27,6 +27,7 @@ export function Projects() {
             "nothiaki.github.io", "nvim", "PointsOfInterest"].includes(repository.name)) {
               return (
                 <p>
+                  <span className="text-primary">*</span>
                   <a className="underline" href={repository.html_url} target="_blank">{repository.name}</a>
                 </p>
               )

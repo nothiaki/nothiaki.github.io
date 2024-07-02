@@ -34,6 +34,9 @@ export function Title() {
       case "idle":
         color = "text-idle"
         break
+      case "offline":
+        color = "text-offline"
+        break
       default:
         color = "text-text"
     }

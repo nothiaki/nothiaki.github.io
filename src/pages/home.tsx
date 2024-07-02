@@ -8,7 +8,7 @@ export function Home() {
   return (
     <>
       <div className="min-h-screen bg-background text-text">
-        <main className="px-12 pt-24 pb-4 flex flex-col gap-9 md:px-64">
+        <main className="px-12 pt-14 pb-4 flex flex-col gap-9 md:px-64 md:pt-24">
           <Title />
           <Articles />
           <Projects />

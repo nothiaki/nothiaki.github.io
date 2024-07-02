@@ -23,6 +23,7 @@ export function Articles() {
         {
           articles.map((article: Article) => (
             <p>
+              <span className="text-primary">*</span>
               <a className="underline" href={article.url} target="_blank">{article.title}</a>
             </p>
           ))
