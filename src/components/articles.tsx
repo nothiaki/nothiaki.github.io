@@ -6,15 +6,15 @@ type Article = {
 }
 
 export function Articles() {
-  const [articles, setArticles] = useState<Article[]>([]);
+  const [articles, setArticles] = useState<Article[]>([])
 
   useEffect(() => {
     fetch('https://dev.to/api/articles?username=hiaki')
       .then((r) => r.json())
       .then((data: Article[]) => {
-        setArticles(data);
-      });
-  }, []);
+        setArticles(data)
+      })
+  }, [])
 
   return (
     <>

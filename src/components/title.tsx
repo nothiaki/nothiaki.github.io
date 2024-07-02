@@ -1,7 +1,50 @@
+import { useEffect, useState } from "react"
+
+type Reply = {
+  data: {
+    "discord_status": string
+  },
+  success: string
+}
+
 export function Title() {
-  const arr: string[] = [":)", ";)", ":D", ":P", "<3", ">_"];
-  const char = arr[Math.floor(Math.random() * arr.length)];
-  const status = "primary"
+  const arr: string[] = [":)", ";)", ":D", ":P", "<3", ">_"]
+  const [char, setChar] = useState<string>("")
+
+  const [ reply, setReply ] = useState<Reply>({ data: { discord_status: "" }, "success": "" })
+
+  useEffect(() => {
+    const char = arr[Math.floor(Math.random() * arr.length)]
+    setChar(char)
+
+    fetch("https://api.lanyard.rest/v1/users/641064892711043082")//discord id is public dont worry
+      .then((r) => r.json())
+      .then((data: Reply) => {
+        setReply(data)
+      })
+  }, [])
+
+   const status = () => {
+    let color = ""
+
+    switch (reply.data.discord_status) {
+      case "online":
+        color = "text-primary"
+        break
+      case "idle":
+        color = "text-idle"
+        break
+      default:
+        color = "text-text"
+    }
+
+    return (
+      <h1>
+        {reply.data.discord_status}
+        <span className={`${color} text-4xl`}>•</span>
+      </h1>
+    )
+  }
 
   return (
     <>
@@ -10,7 +53,7 @@ export function Title() {
           Hey<span className="text-primary">,</span> I<span className="text-primary">'</span>
           m Celso Henrique <span className="text-primary">{ char }</span>
         </h1>
-        <h1>online<span className={`text-${status} text-2xl`}>•</span></h1>
+        {status()}
       </div>
       <div className="flex flex-col gap-4">
         <p>

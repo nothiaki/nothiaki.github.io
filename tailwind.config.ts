@@ -7,7 +7,7 @@ export default {
       'background': '#0D1117',
       'primary': '#28C85E',
       'text': '#EFEFEF',
-      'offline': '#434343'
+      'idle': '#434343',
     },
     extend: {},
   },
