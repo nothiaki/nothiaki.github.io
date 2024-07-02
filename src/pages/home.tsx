@@ -1,5 +1,6 @@
 import { Articles } from "../components/articles"
 import { Projects } from "../components/projects"
+import { Social } from "../components/social"
 import { Title } from "../components/title"
 
 export function Home() {
@@ -10,6 +11,7 @@ export function Home() {
           <Title />
           <Articles />
           <Projects />
+          <Social />
         </main>
       </div>
     </>

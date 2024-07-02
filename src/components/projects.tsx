@@ -20,7 +20,7 @@ export function Projects() {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <p>Projects</p>
+        <p>Projects<span className="text-primary">::</span></p>
         {
           repos.map((repository: Repository) => {
             if(["21CardsMagic", "idempotency", "KinvoBackendChallenge", "LoginCrud",
@@ -36,6 +36,6 @@ export function Projects() {
           })
         }
       </div>
-    </>
+   </>
   )
 }

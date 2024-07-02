@@ -40,8 +40,8 @@ export function Title() {
 
     return (
       <h1>
+        <span className={`${color} text-xl`}>*</span>
         {reply.data.discord_status}
-        <span className={`${color} text-4xl`}>•</span>
       </h1>
     )
   }

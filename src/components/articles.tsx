@@ -19,7 +19,7 @@ export function Articles() {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <p>Articles</p>
+        <p>Articles<span className="text-primary">::</span></p>
         {
           articles.map((article: Article) => (
             <p>
