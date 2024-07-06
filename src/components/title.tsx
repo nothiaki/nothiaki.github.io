@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { SpanPrimary } from "./span-primary"
+import randomChar from "../utils/random-char"
 
 type Reply = {
   data: {
@@ -9,14 +10,12 @@ type Reply = {
 }
 
 export function Title() {
-  const arr: string[] = [":)", ";)", ":D", ":P", "<3", ">_"]
   const [char, setChar] = useState<string>("")
 
   const [ reply, setReply ] = useState<Reply>({ data: { discord_status: "" }, "success": "" })
 
   useEffect(() => {
-    const char = arr[Math.floor(Math.random() * arr.length)]
-    setChar(char)
+    setChar(randomChar())
 
     fetch("https://api.lanyard.rest/v1/users/641064892711043082")//discord id is public dont worry
       .then((r) => r.json())
