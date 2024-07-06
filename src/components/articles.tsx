@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { SpanPrimary } from "./span-primary"
 
 type Article = {
   title: string,
@@ -19,11 +20,11 @@ export function Articles() {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <p>Articles<span className="text-primary">::</span></p>
+        <p>Articles<SpanPrimary>::</SpanPrimary></p>
         {
           articles.map((article: Article) => (
             <p>
-              <span className="text-primary">*</span>
+              <SpanPrimary>*</SpanPrimary>
               <a className="underline" href={article.url} target="_blank">{article.title}</a>
             </p>
           ))

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { SpanPrimary } from "./span-primary"
 
 type Repository = {
     name: string,
@@ -20,14 +21,14 @@ export function Projects() {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <p>Projects<span className="text-primary">::</span></p>
+        <p>Projects<SpanPrimary>::</SpanPrimary></p>
         {
           repos.map((repository: Repository) => {
             if(["21CardsMagic", "idempotency", "KinvoBackendChallenge", "LoginCrud",
             "nothiaki.github.io", "nvim", "PointsOfInterest"].includes(repository.name)) {
               return (
                 <p>
-                  <span className="text-primary">*</span>
+                  <SpanPrimary>*</SpanPrimary>
                   <a className="underline" href={repository.html_url} target="_blank">{repository.name}</a>
                 </p>
               )

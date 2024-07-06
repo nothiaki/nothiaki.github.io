@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { SpanPrimary } from "./span-primary"
 
 type Reply = {
   data: {
@@ -53,9 +54,10 @@ export function Title() {
     <>
       <div className="flex justify-between items-end">
         <h1 className="text-2xl font-bold">
-          Hey<span className="text-primary">,</span> I<span className="text-primary">'</span>
+          Hey<SpanPrimary>,</SpanPrimary> I<SpanPrimary>'</SpanPrimary>
           m Celso Henrique <span className="text-primary">{ char }</span>
         </h1>
+        
         {status()}
       </div>
       <div className="flex flex-col gap-4">
