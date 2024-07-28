@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route, Navigate, HashRouter } from "react-router-dom"
 import { Home } from "./pages/home"
 import { Album } from "./pages/album"
 
 export function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/album" element={<Album />} />
-        <Route path="*" element={<Navigate to={"/"} />} />
+        <Route path="/" element={ <Home />} />
+        <Route path="/album" element={ <Album />} />
+        <Route path="*" element={ <Navigate to={"/"} />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

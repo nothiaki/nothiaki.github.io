@@ -4,7 +4,7 @@ export function Social() {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <p>Social<SpanPrimary>*</SpanPrimary></p>
+        <p>Social<SpanPrimary>::</SpanPrimary></p>
         <p>
           <SpanPrimary>*</SpanPrimary>
           <a className="underline" href="https://github.com/nothiaki" target="_blank">GitHub</a>

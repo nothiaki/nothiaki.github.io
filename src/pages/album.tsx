@@ -33,10 +33,6 @@ export function Album() {
               <img src="/src/assets/album/06.jpg" loading="lazy" />
               <img src="/src/assets/album/07.jpg" loading="lazy" />
               <img src="/src/assets/album/08.jpg" loading="lazy" />
-              <img src="/src/assets/album/09.jpg" loading="lazy" />
-              <img src="/src/assets/album/10.jpg" loading="lazy" />
-              <img src="/src/assets/album/11.jpg" loading="lazy" />
-              <img src="/src/assets/album/12.jpg" loading="lazy" />
             </div>
           </div>
           <Footer />
