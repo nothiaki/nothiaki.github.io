@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { SpanPrimary } from "./span-primary"
+import ghrepos from "../assets/json/ghrepos.json"
 
 type Repository = {
     name: string,
@@ -24,8 +25,7 @@ export function Projects() {
         <p>Projects<SpanPrimary>::</SpanPrimary></p>
         {
           repos.map((repository: Repository) => {
-            if(["21CardsMagic", "idempotency", "KinvoBackendChallenge", "LoginCrud",
-            "nothiaki.github.io", "nvim", "PointsOfInterest"].includes(repository.name)) {
+            if(ghrepos.includes(repository.name)) {
               return (
                 <p>
                   <SpanPrimary>*</SpanPrimary>
