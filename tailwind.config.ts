@@ -4,9 +4,9 @@ export default {
   content: ['./src/**/*.{js,ts,tsx}'],
   theme: {
     colors: {
-      'background': '#0D1117',
-      'primary': '#28C85E',
-      'text': '#EFEFEF',
+      'background': '#f3f1ea',
+      'primary': '#009440',
+      'text': '#020817',
       'idle': '#f0b232',
       'offline': '#434343',
     },
