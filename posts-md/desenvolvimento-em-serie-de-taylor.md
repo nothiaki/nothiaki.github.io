@@ -4,8 +4,36 @@ $$
 f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x - a)^n
 $$
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Sendo $$ f(x) $$ uma função dada, então podemos aplicar a série de Taylor para aproximar qualquer ponto dessa função.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+Tomando por exemplo a função $$ ln(x) $$ podemos fazer uma aproximação para $$ ln(2) $$. Vamos definir $$ n $$ indo de $$ 0 $$ até $$ 3 $$ na série, isso já da uma boa aproximação. Desse modo, derivando $$ f(x) $$ até a ordem 3 teremos:
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with.
+$$
+f'(x) = \frac{1}{x},
+f''(x) = -\frac{1}{x^2},
+f'''(x) = \frac{2}{x^3}
+$$
+
+Como usaremos $$ a = 2$$ as derivadas serão:
+
+$$
+f'(2) = \frac{1}{2},
+f''(2) = -\frac{1}{4},
+f'''(2) = \frac{2}{8}
+$$
+
+Sabendo isso já podemos aplicar a série de Taylor para aproximar o valor da função no ponto. Aplicando teremos:
+
+$$
+f(x) \approx ln(x) + \frac{(x-2)}{2} - \frac{(x-2)^2}{8} + \frac{(x-2)^3}{24}
+$$
+
+Note os gráficos estão representado abaixo. A curva em verde representa $$ ln(x) $$ e a azul representa $$ f(x) $$:
+
+![gráfico de ln(x) e f(x)](../assets/posts-imgs/desenvolvimento-em-serie-de-taylor/graph.png)
+
+A primeiro momento a curva azul não parece convergir para a curva verde mas isso porque pegamos um $$ n $$ pequeno, conforme $$ n $$ cresce o gráfico se refina e vai se aproximando dos valores da função inicial para $$ x $$ mais distantes de $$ a $$.
+
+Com isso, se aplicarmos $$ f(x) $$ com $$ x $$ próximos o suficiente de $$ 2 $$ conseguimos obter um valor muito próximo do que seria $$ ln(x) $$.
+
+Desse modo, concuí-se que a série de Taylor é uma ferramente importante e muito usada em diversos segmentos para obtermos valores complexos de forma mais simples.
