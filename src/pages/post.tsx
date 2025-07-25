@@ -31,7 +31,7 @@ export function Post() {
     <>
       <header className="p-2 absolute">
         <Link
-          className="underline decoration-2 decoration-primary text-inherit font-bold"
+          className="text-lg md:text-md underline decoration-2 decoration-primary text-inherit font-bold"
           to={"/"}
         >&lt;</Link>
       </header>
