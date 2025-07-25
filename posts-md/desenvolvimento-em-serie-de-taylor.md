@@ -9,17 +9,17 @@ Sendo $$ f(x) $$ uma função dada, então podemos aplicar a série de Taylor pa
 Tomando por exemplo a função $$ ln(x) $$ podemos fazer uma aproximação para $$ ln(2) $$. Vamos definir $$ n $$ indo de $$ 0 $$ até $$ 3 $$ na série, isso já da uma boa aproximação. Desse modo, derivando $$ f(x) $$ até a ordem 3 teremos:
 
 $$
-f'(x) = \frac{1}{x},
-f''(x) = -\frac{1}{x^2},
-f'''(x) = \frac{2}{x^3}
+\frac{df}{dx} = \frac{1}{x}, \quad
+\frac{d^2 f}{dx^2} = -\frac{1}{x^2}, \quad
+\frac{d^3 f}{dx^3} = \frac{2}{x^3}
 $$
 
 Como usaremos $$ a = 2$$ as derivadas serão:
 
 $$
-f'(2) = \frac{1}{2},
-f''(2) = -\frac{1}{4},
-f'''(2) = \frac{2}{8}
+\frac{df}{dx} = \frac{1}{2}, \quad
+\frac{d^2 f}{dx^2} = -\frac{1}{4}, \quad
+\frac{d^3 f}{dx^3} = \frac{2}{8}
 $$
 
 Sabendo isso já podemos aplicar a série de Taylor para aproximar o valor da função no ponto. Aplicando teremos:
