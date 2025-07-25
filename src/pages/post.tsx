@@ -36,7 +36,7 @@ export function Post() {
         >&lt;</Link>
       </header>
       <div className="min-h-screen bg-background text-text">
-        <main className="px-12 pt-14 pb-4 flex flex-col gap-6 md:px-32 md:pt-24 lg:px-64 lg:pt-24">
+        <main className="px-6 pt-14 pb-4 flex flex-col gap-6 md:px-32 md:pt-24 lg:px-64 lg:pt-24">
           <div className="flex justify-between items-center flex gap-4">
             <Link
               className="underline decoration-2 decoration-primary text-inherit font-bold"
