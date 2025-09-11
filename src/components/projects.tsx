@@ -10,9 +10,15 @@ export function Projects() {
           <p>
             <a
               className="underline decoration-2 decoration-primary text-inherit"
-              href="https://github.com/nothiaki/trtl3" target="_blank"
-            >Trtl3</a> é um storage de arquivos (objetos) inspirado no s3 da AWS, mas com foco total na simplicidade.
-            Junto a ele criei SDK's para várias linguagens para sua integração em qualquer projeto!
+              href="https://github.com/blobtrtl3/trtl3" target="_blank"
+            >Trtl3</a> é um storage de arquivos (objetos) inspirado no s3 da AWS, mas com foco total na simplicidade para desenvolvedores
+            iniciantes que querem criar aplicações mais completas e com mais facilidade.
+            Junto a ele criei SDK's para várias linguagens para sua integração em qualquer projeto! Além da documentação que pode ser
+              encontrada em&nbsp;
+            <a
+              className="underline decoration-2 decoration-primary text-inherit"
+              href="https://trtl3.store" target="_blank"
+            >trtl3.store</a>
           </p>
           <p>
             <a
