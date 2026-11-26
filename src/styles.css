@@ -2,10 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --accent-color: rgb(56, 104, 120);
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  font-size: 1.2em;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent-color);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  transition: color 150ms ease;
+}
+
+a:hover {
+  opacity: 0.75;
 }
 
 ::-webkit-scrollbar {
@@ -20,11 +44,5 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: rgb(86, 86, 86, 0.5) #0D1117;
-}
-
-@media (max-width: 720px) {
-  .katex {
-    font-size: 0.92em;
-  }
+  scrollbar-color: rgb(86, 86, 86, 0.5) #fafafa;
 }

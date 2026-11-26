@@ -1,16 +1,16 @@
 import { Footer } from "../components/footer"
-import { Posts } from "../components/posts"
 import { Projects } from "../components/projects"
 import { Social } from "../components/social"
 import { Title } from "../components/title"
+import { Write } from "../components/write"
 
 export function Home() {
   return (
     <>
       <div className="min-h-screen bg-background text-text">
-        <main className="px-6 pt-14 pb-4 flex flex-col gap-6 md:px-48 md:pt-24 lg:px-[30%] lg:pt-24">
+        <main className="mx-auto flex w-full max-w-[640px] flex-col gap-10 px-6 py-16 md:py-24">
           <Title />
-          <Posts />
+          <Write />
           <Projects />
           <Social />
           <Footer />
@@ -19,4 +19,3 @@ export function Home() {
     </>
   )
 }
-

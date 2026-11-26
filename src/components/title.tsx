@@ -11,32 +11,24 @@ export function Title() {
 
   return (
     <>
-      <div className="flex items-end gap-x-2">
-        <div className="w-20 h-20 relative rounded">
-          <img src="/assets/pfp.jpg" className="w-20 h-20 rounded" />
-          <img
-            src="https://flagcdn.com/br.svg"
-            alt="brasil"
-            className="absolute right-0 bottom-0 w-6 rounded"
-          />
-        </div>
-      </div>
       <div className="flex justify-between items-end">
-        <h1 className="text-2xl font-bold">
-          Olá<SpanPrimary>,</SpanPrimary> me chamo Celso Henrique <span className="text-primary">{ char }</span>
+        <h1 className="text-2xl font-semibold leading-tight md:text-3xl">
+          Hi<SpanPrimary>,</SpanPrimary> I&apos;m Celso Henrique <span className="text-primary">{ char }</span>
         </h1>
-        
       </div>
+      <p className="-mt-8 text-md italic text-offline" aria-label="Pronunciation">
+        /ˈsɛw.su ẽˈʁi.kɪ/
+      </p>
       <div className="flex flex-col gap-2">
         <p>
-          Sou desenvolvedor de software, e graduando em Ciências Exatas na UFJF!
+          I&apos;m a software developer pursuing a BSc in Mathematics at UFJF.
         </p>
         <p>
-          As tecnologias que mais uso são Java, e TypeScript/JavaScript.
-          Tenho grande interesse em desenvolvimento back-end e soluções arquiteturais.
+          I mostly work with Java, GO and TypeScript/JavaScript, with a strong interest in
+          backend development and software architecture.
         </p>
         <p>
-          Sou apaixonado por programação e matemática e faço alguns posts nesse blog, falando sobre temas que acho curiosos, sinta-se livre para ler!
+          I&apos;m passionate about mathematics, programming and solving challenging problems.
         </p>
       </div>
     </>

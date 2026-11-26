@@ -4,14 +4,13 @@ export default {
   content: ['./src/**/*.{js,ts,tsx}'],
   theme: {
     colors: {
-      'background': '#fffef9',
-      'primary': '#009440',
-      'text': '#020817',
-      'idle': '#f0b232',
-      'offline': '#434343',
+      'background': '#fafafa',
+      'primary': 'var(--accent-color)',
+      'text': '#2b2b2b',
+      'idle': '#ff5722',
+      'offline': '#aaa',
     },
     extend: {},
   },
   plugins: [],
 } satisfies Config
-

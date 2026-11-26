@@ -5,29 +5,25 @@ export function Projects() {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <p className="font-bold">Projetos<SpanPrimary>::</SpanPrimary></p>
+        <p className="font-bold">Projects<SpanPrimary>*</SpanPrimary></p>
         <div className="flex flex-col gap-2">
           <p>
             <a
-              className="underline decoration-2 decoration-primary text-inherit"
+              className="underline decoration-2 decoration-primary"
               href="https://github.com/blobtrtl3/trtl3" target="_blank"
-            >Trtl3</a> é um storage de arquivos (objetos) inspirado no s3 da AWS, mas com foco total na simplicidade para desenvolvedores
-            iniciantes que querem criar aplicações mais completas e com mais facilidade.
-            Junto a ele criei SDK's para várias linguagens para sua integração em qualquer projeto! Além da documentação que pode ser
-              encontrada em&nbsp;
-            <a
-              className="underline decoration-2 decoration-primary text-inherit"
-              href="https://trtl3.store" target="_blank"
-            >trtl3.store</a>
+            >Trtl3</a> is an S3-inspired object storage service focused on simplicity for
+            developers building more capable applications. I also created SDKs in
+            several languages to make it easy to integrate into any project.
           </p>
           <p>
             <a
-              className="underline decoration-2 decoration-primary text-inherit"
+              className="underline decoration-2 decoration-primary"
               href="https://github.com/nothiaki/cqrs-rating" target="_blank"
-            >Cqrs Rating</a> é a simulação de uma resolução de um problema arquitetural onde temos um serviço
-            de avaliação de produtos, que está tendo gargalos para realizar suas tarefas. Então implementei o padrão
-            CQRS(Command Query Responsibility Segregation). O serviço de escrita utiliza PostgreSQL, enquanto
-            a leitura é feita por meio do Elasticsearch, conectados via Kafka Connect usando CDC (Change Data Capture).
+            >CQRS Rating</a> explores an architectural solution for a product-rating
+            service struggling to keep up with demand. It implements CQRS (Command
+            Query Responsibility Segregation), using PostgreSQL for writes and
+            Elasticsearch for reads, connected through Kafka Connect and CDC
+            (Change Data Capture).
           </p>
         </div>
       </div>
